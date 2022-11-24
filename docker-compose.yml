@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   php:
-    container_name: weather_app
+    container_name: weather_app1
     build:
       context: ./docker/php
     ports:
@@ -10,7 +10,7 @@ services:
     volumes:
       - .:/var/www/weather_app
   nginx:
-    container_name: weather_app_nginx
+    container_name: weather_app_nginx1
     image: nginx:stable-alpine
     ports:
       - '8080:80'
